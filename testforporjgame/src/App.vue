@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 const textKey = ref([])
 document.body.addEventListener('keydown', (e) => {
-  textKey.value.push(e.which)
+  textKey.value.push(e.key)
 });
 
 </script>
