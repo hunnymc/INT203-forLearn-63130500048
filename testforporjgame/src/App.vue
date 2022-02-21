@@ -10,6 +10,7 @@ document.body.addEventListener('keydown', (e) => {
 <template>
   <div style="margin: 2em;">
     <h1>{{ textKey }}</h1>
+    <p>Mc</p>
   </div>
 </template>
 
