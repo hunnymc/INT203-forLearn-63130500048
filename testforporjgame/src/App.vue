@@ -155,23 +155,19 @@ document.body.addEventListener("keydown", (e) => {
 					</div>
 				</div>
 			</div>
-			<div class="flex justify-center">
-				<div class="card mx-auto h-[5rem] w-[5rem] bg-base-100 flex justify-center">
-					<div>Counts: {{ counts }}</div>
+			<div class=" bg-info flex justify-center">
+				<div class="card mx-auto m-2 px-10 py-5 bg-base-200 grid justify-center">
+					<div class="text-[20px] mx-auto">Score</div>
+					<div class="text-[30px] mx-auto">{{ scores }}</div>
 				</div>
-				<div class="card mx-auto h-[5rem] w-[5rem] bg-base-100 flex justify-center">
-					<div>Counts: {{ counts }}</div>
+				<div class="card mx-auto m-2 px-10 py-5 bg-base-200 grid justify-center">
+					<div class="text-[20px] mx-auto">Counts</div>
+					<div class="text-[30px] mx-auto">{{ counts }}</div>
 				</div>
-				<div class="card mx-auto h-[5rem] w-[5rem] bg-base-100 flex justify-center">
-					<div>Counts: {{ counts }}</div>
+				<div class="card mx-auto m-2 px-10 py-5 bg-base-200 grid justify-center">
+					<div class="text-[20px] mx-auto">Acc</div>
+					<div class="text-[30px] mx-auto">{{ acc }}%</div>
 				</div>
-
-				<div
-					class="card text-justify mx-auto grid h-[5rem] w-[5rem] bg-base-100 grid justify-items-center"
-				>Score: {{ scores }}</div>
-				<div
-					class="card text-justify mx-auto grid h-[5rem] w-[5rem] bg-base-100 grid justify-items-center"
-				>Acc: {{ acc }}%</div>
 			</div>
 		</div>
 	</div>
