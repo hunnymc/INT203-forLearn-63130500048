@@ -114,7 +114,7 @@ document.body.addEventListener("keydown", (e) => {
 </script>
 
 <template>
-	<div class="container mx-auto flex justify-center h-[35rem] m-20 p-20 bg-base-300 rounded-box">
+	<div class="container mx-auto flex justify-center h-[35rem] min-w-[764px] m-20 p-20 bg-base-300 rounded-box">
 		<div class="grid justify-items-center">
 			<div id="start-game" v-show="!isClick">
 				<iframe
@@ -136,7 +136,7 @@ document.body.addEventListener("keydown", (e) => {
 			</div>
 		</div>
 		<!-- Countdown -->
-		<div v-show="isClick" class="container mx-auto justify-items-center">
+		<div v-show="isClick" class="container mx-auto justify-items-center justify-center">
 			<p
 				class="flex justify-center"
 				:class="timeCount <= 10000 ? timeTextAlert : timeText"
@@ -155,7 +155,7 @@ document.body.addEventListener("keydown", (e) => {
 					</div>
 				</div>
 			</div>
-			<div class=" bg-info flex justify-center">
+			<div class="mx-auto w-[32rem] flex">
 				<div class="card mx-auto m-2 px-10 py-5 bg-base-200 grid justify-center">
 					<div class="text-[20px] mx-auto">Score</div>
 					<div class="text-[30px] mx-auto">{{ scores }}</div>
