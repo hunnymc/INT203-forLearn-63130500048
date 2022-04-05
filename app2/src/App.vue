@@ -20,7 +20,12 @@ const testMe6 = (e, n) => console.log('test me 6', e, n)
       <button @click="testMe5($event, 999)">TEST ME 5</button>
       <button @click="testMe6(999, $event)">TEST ME 6</button>
     </div>
-    <BaseButtonVue></BaseButtonVue>
+    <BaseButtonVue button-name="Click Me 1" @clickMe="testMe1" />
+    <BaseButtonVue button-name="Click Me 2" @clickMe="testMe2" />
+    <BaseButtonVue button-name="Click Me 3" @clickMe="testMe3()" />
+    <BaseButtonVue button-name="Click Me 4" @clickMe="testMe4($event)" />
+    <BaseButtonVue button-name="Click Me 5" @clickMe="testMe5($event, 240)" />
+    <BaseButtonVue button-name="Click Me 6" @clickMe="testMe6(240, $event)" />
   </div>
 </template>
 
